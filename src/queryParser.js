@@ -15,7 +15,6 @@ function parseQuery(query) {
     }
 }
 
-// src/queryParser.js
 function parseWhereClause(whereString) {
     const conditionRegex = /(.*?)(=|!=|>|<|>=|<=)(.*)/;
     return whereString.split(/ AND | OR /i).map(conditionString => {
